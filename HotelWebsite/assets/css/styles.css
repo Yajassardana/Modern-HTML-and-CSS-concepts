@@ -1,0 +1,126 @@
+/* defaults- many defualts as we reset it so margin and paddings must be added explicitly */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6em;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+h1,
+h2,
+h3 {
+	padding-bottom: 20px;
+}
+p {
+	margin: 10px 0;
+}
+/* utilities */
+.container {
+	margin: auto;
+	max-width: 1100px;
+	/* overflow: auto; */
+	padding: 0 20px;
+}
+.text-primary {
+	color: #f7c08a;
+}
+.btn {
+	padding: 8px 12px;
+	border: none;
+	background-color: #333;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+}
+.btn-light {
+	background-color: #f4f4f4;
+	color: #333;
+}
+.btn:hover {
+	background-color: #f7c08a;
+	color: #333;
+}
+.lead {
+	font-size: 1.2rem;
+}
+.bg-dark {
+	background-color: #333;
+}
+.bg-primary {
+	background-color: #f7c08a;
+}
+/* navbar */
+#navbar {
+	background: #333;
+	color: white;
+	overflow: auto; /*add a scroll bar if content goes out of container/view*/
+}
+#navbar .logo {
+	float: left;
+	padding-top: 20px;
+}
+
+#navbar a {
+	color: white;
+}
+
+#nav-items {
+	list-style: none;
+	float: right;
+}
+#nav-items li {
+	float: left;
+	text-align: center;
+}
+#nav-items li a {
+	display: block; /*done to add padding*/
+	padding: 20px;
+}
+#nav-items li a:hover,
+#nav-items li a.current {
+	background: #444;
+	color: #f7c08a;
+}
+/* showcase */
+#showcase {
+	background: url('../images/showcase.jpg') no-repeat center center/cover;
+	height: 400px;
+}
+.showcase-content {
+	text-align: center;
+	padding-top: 125px;
+	color: white;
+}
+.showcase-content h1 {
+	font-size: 4rem;
+}
+.showcase-content .lead {
+	margin-bottom: 25px;
+}
+/* home info */
+#home-info {
+	height: 300px;
+}
+#home-info .info-img {
+	float: left;
+	width: 50%;
+	background: url('../images/photo-1.jpg') no-repeat;
+	min-height: 100%;
+}
+
+#home-info .info-content {
+	color: white;
+	height: 100%;
+	text-align: center;
+	float: right;
+	width: 49%;
+	padding-top: 50px 30px;
+	overflow: hidden;
+}
